@@ -1,4 +1,5 @@
 
+
 // グローバル変数を定義
 const apiKey = 'd2b5ae8338f4deac5ae15440f366ce53';
 const limit = 1;
@@ -165,6 +166,8 @@ fetch('https://api.aviationstack.com/v1/flights?access_key='
         // }, 2000);
         $("#title").html("");
         $("#video").css("opacity", 0);
+        $("#today").css("margin-top", "10px");
+        $("#destination").css("margin-top", "150px")
     }
     displayFlight(data);
     $("#today").html("")
@@ -173,9 +176,11 @@ fetch('https://api.aviationstack.com/v1/flights?access_key='
 
 $("#today").on("click",function () {  
     onboard();
-    $("#result").fadeIn(1000)
+    $("#result").fadeIn()
     
 })
+
+
 
 
 
