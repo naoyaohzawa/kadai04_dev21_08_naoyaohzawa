@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <title>Flight Tracker</title>
+</head>
+<body>
+
+
+
+<video id="video" src="movie/mv.mp4" autoplay loop playsinline muted></video>
+
+<section>
+    <h1 id="destination">“Life is either a daring adventure or nothing at all” <span class="quote">by Helen Keller</span> </h1>
+    <h1 id="today">Today's Your Flight</h1>
+</section>
+
+
+<div id="result">
+    
+
+    <div class="main-info">
+        <section class="flight-card back-card">
+            <h2 id="airline">Airline:Japan Airlines</h2>
+            <table class="flight-company-table">
+                <tr>
+                    <td width="40%" class="info-titile">Flight Number:</td>
+                    <td width="60%" id="flight_number" class="info-main">JL999</td>
+                </tr>
+                <tr>
+                    <td class="info-titile">Flight Date:</td>
+                    <td id="flight_date" class="info-main">2021-09-29:25:00+00:00</td>
+                </tr>
+                <tr>
+                    <td class="info-titile">Flight Status:</td>
+                    <td id="flight_status" class="info-main">Scheduled</td>
+                </tr>
+            </table>
+        </section>
+    
+        <section class="weather-card back-card">
+            <div class="weather">
+                <h2 class="city">Weather in Tokyo</h2>
+                
+                <div class="weather-flex">        
+                    <div class="weather-text">
+                        <h1 class="temp"></h1>
+                        <div class="description"></div>
+                        <div class="humidity">Humidity: </div>
+                        <div class="wind">Wind Speed: km/h</div>
+                    </div>
+
+                    <div><img src="" alt="" class="icon"></div>                    
+                </div>
+                
+            </div>
+        </section>    
+    </div>
+    
+    <div class="flight-info">
+        <section class="dep-card back-card">
+            <h2>Departure</h2>
+            <table class="flight-info-table">
+                <tr>
+                    <td width="30%" class="info-titile">Scheduled:</td>
+                    <td width="70%" id="departure_scheduled" class="info-main">2021-09-29:25:00+00:00</td>
+                </tr>
+                <tr>
+                    <td class="info-titile">Estimated:</td>
+                    <td id="departure_estimated" class="info-main">2021-09-29:25:00+00:00</td>
+                </tr>
+                <tr>
+                    <td class="info-titile">Airport:</td>
+                    <td id="departure_airport" class="info-main">Haneda</td>
+                </tr>
+            </table>
+        </section>
+        
+        <section class="arr-card back-card">
+            <h2>Arrival</h2>
+            <table class="flight-info-table">
+                <tr>
+                    <td  width="30%" class="info-titile">Scheduled:</td>
+                    <td  width="70%" id="arrival_scheduled" class="info-main">2021-09-29:25:00+00:00</td>
+                </tr>
+                <tr>
+                    <td class="info-titile">Estimated:</td>
+                    <td id="arrival_estimated" class="info-main">2021-09-29:25:00+00:00</td>
+                </tr>
+                <tr>
+                    <td class="info-titile">Airport:</td>
+                    <td id="arrival_airport" class="info-main">Haneda</td>
+                </tr>
+            </table>
+        </section>
+    </div>
+    
+    <a href="list.html"><h2 class="go">Go to All Flight</h2></a>
+
+    
+</div>
+
+
+
+<!-- script  JSx   -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/index.js"></script>    
+</body>
+</html>
