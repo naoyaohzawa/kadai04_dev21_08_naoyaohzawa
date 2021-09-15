@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+html{
+    font-size: 62.5%;   /* 16px × 62.5% =10px */
+}
+
+body{
+    font-size: 2.0rem;	
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    background-image: url("movie/mv.mp4");
+    background-size: cover;
+} 
+
+td{
+    padding: 5px;
+}
+
+/* videoの初期設定 */
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: -5;
+}
+
+/* 見出し文字 */
+.title{
+    color: white;
+    font-size: 10.0rem;
+}
+
+/* 結果のdestination */
+#destination{
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+}
+
+#destination .quote{
+    font-size: 2.5rem;
+    color: white;
+}
+
+#destination span{
+    font-size: 8.0rem;
+}
+/* today */
+#today{
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    font-size: 9.0rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+#today:hover{
+    background-color: #4b4a4ad0;
+    border-radius: 15px;
+}
+
+#today:active {
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+  }
+
+/* 結果画面 */
+#result{
+    color: white;
+    margin: 100px 0 ;
+    display: none;
+}
+
+/* flight情報とweather情報 */
+.main-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2.0rem;
+    margin-bottom: 50px;
+    min-width: 1400px;
+    height: 150px;
+}
+
+/* flight情報 */
+.flight-card{
+    width: 30%;
+}
+
+/* 天気情報 */
+.weather-card{
+    width: 30%;
+    
+}
+
+.weather-flex{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.weather-text{
+    margin-left: 20px;
+}
+
+.temp{
+    padding-bottom: 3px;
+}
+
+.description{
+    padding-bottom: 3px;
+}
+
+.icon{
+    width: 80px;
+    height: 80px;
+    margin-right: 30px;
+}
+
+/* depature/arrival情報 */
+.flight-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+/* dep/arrの裏紙 */
+.back-card{
+    background-color: #4b4a4ad0;
+    border-radius: 20px;
+    height: 100%;
+    padding: 15px;
+}
+
+.back-card h2{
+    font-size: 3.0rem;
+    text-align: center;
+    margin-bottom: 1.0rem;
+}
+
+/* dep/arrの両方の設定 */
+.flight-info-table{
+    margin: 0 auto;
+}
+
+.info-title{
+    text-align: left;
+}
+
+.info-main{
+    text-align: right;
+}
+
+/* dep情報 */
+.dep-card{
+    width: 30%;
+}
+
+/* arr情報 */
+.arr-card{
+    width: 30%;
+}
+
+
+.go{
+    display: block;
+    text-align: center;
+    font-size: 3.0rem;
+    background-color: 4b4a4ad0;
+    width: fit-content;
+    margin: 0 auto ;
+    padding: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.go:hover{
+    background-color: 4b4a4ad0;
+    color: white;
+}

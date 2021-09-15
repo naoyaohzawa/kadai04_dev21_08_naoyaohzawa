@@ -1,0 +1,67 @@
+
+@charset "utf-8";
+
+html{
+    font-size: 62.5%;   /* 16px × 62.5% =10px */
+}
+
+body{
+    font-size: 2.0rem;	
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+} 
+
+
+.mainImage{
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+#today{
+    position: absolute;
+    font-size: 5.0rem;
+    color: rgb(162, 113, 113);
+    top: 10%;
+    left: 10%;
+}
+
+#back{
+    display: block;
+    text-align: center;
+    font-size: 3.0rem;
+    background-color: rgb(222, 218, 213);
+    width: fit-content;
+    margin: 0 auto ;
+    padding: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#back:hover{
+    background-color: rgb(155, 142, 123);
+    color: white;
+}
+
+.flight-table{
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.table{
+    width: 100%;
+
+    text-align: center;
+}
+
+.table th{
+    border: 1px solid black;
+}
+
+.table td{
+    border: 1px solid black;
+    padding: 5px;
+}

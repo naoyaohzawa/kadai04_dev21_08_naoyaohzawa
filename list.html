@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/list.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <title>Flight Tracker</title>
+</head>
+<body>
+
+
+
+
+<section>
+
+    <img class="mainImage" src="movie/flight.jpg" alt="">
+    <div id="today">All Flights From Singapore</div>
+    
+    
+    
+</section>
+
+<section>
+    <div class="flight-table">
+        <table class="table">
+            <tr>
+                <th>Departure Time</th>
+                <th>Destination</th>
+                <th>Airline</th>
+                <th>Flight Number</th>
+                <th>Arrival Time</th>
+            </tr>
+        
+            <tr>
+                <td id="departure_scheduled"></td>
+                <td id="arrival_airport"></td>
+                <td id="airline"></td>
+                <td id="flight_number"></td>
+                <td id="arrival_estimated"></td>
+            </tr>
+        </table>
+        
+    </div>
+
+<a id="back" href="index.html"><h1>back to your flight</h1></a>
+
+</section>
+
+
+<!-- script  JSx   -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/list.js"></script>    
+</body>
+</html>
