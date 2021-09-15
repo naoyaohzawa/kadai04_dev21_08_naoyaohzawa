@@ -1,7 +1,9 @@
+// document.getElementById("video").playbackRate = 2.5;
+
+// https://aviationstack.com/
+// https://aviationstack.com/dashboard
 
 
-// // optional parameters: 
-//     & limit = 100（ここで検索フライト数を設定）
 
 // 無料だと500フライト per monthしか調べられないから注意！
 
@@ -14,7 +16,7 @@ const airport = "SIN" //changi airport(singapore)
 // ボタンを押したら全てが始まるonboard関するを定義
 function onboard() {
 // JSON読み込み
-fetch('http://api.aviationstack.com/v1/flights?access_key='
+fetch('https://api.aviationstack.com/v1/flights?access_key='
     // URL中に検索方法を設定
     + apiKey
     + "&limit="
@@ -65,6 +67,10 @@ fetch('http://api.aviationstack.com/v1/flights?access_key='
             arrival_city == "Tokyo";
         }
         // console.log(arrival_city)
+
+        if(arrival_city == "Heathrow"){
+            arrival_city == "London";
+        }
 
         // 出発scheduleから00:00を削除
         let pis = departure_scheduled.indexOf("+");
