@@ -42,9 +42,10 @@ video {
 
 /* 結果のdestination */
 #destination{
-    font-size: 3.5rem;
+    font-size: 7.5rem;
     color: white;
     text-align: center;
+    
 }
 
 #destination .quote{
@@ -61,7 +62,7 @@ video {
     text-align: center;
     margin: auto;
     margin-top: 100px;
-    font-size: 9.0rem;
+    font-size: 5.0rem;
     width: 100%;
     cursor: pointer;
 }
