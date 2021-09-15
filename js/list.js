@@ -8,7 +8,7 @@
 
 
 // グローバル変数を定義
-const apiKey = '';
+const apiKey = 'd2b5ae8338f4deac5ae15440f366ce53';
 const limit = 10;
 const ailineCode = "SQ" //singapore airways
 const airport = "SIN" //changi airport(singapore)
