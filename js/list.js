@@ -15,7 +15,7 @@ const airport = "SIN" //changi airport(singapore)
 // ボタンを押したら全てが始まるonboard関するを定義
 function onboard() {
 // JSON読み込み
-fetch('http://api.aviationstack.com/v1/flights?access_key='
+fetch('https://api.aviationstack.com/v1/flights?access_key='
     // URL中に検索方法を設定
     + apiKey
     + "&limit="
