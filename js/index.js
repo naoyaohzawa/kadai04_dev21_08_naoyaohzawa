@@ -1,7 +1,7 @@
 
 
 // グローバル変数を定義
-const apiKey = 'd2b5ae8338f4deac5ae15440f366ce53';  //AviationstackのAPI
+const apiKey = '';  //AviationstackのAPI
 const limit = 1;
 const ailineCode = "SQ" //singapore airways
 const airport = "SIN" //changi airport(singapore)
@@ -124,7 +124,7 @@ fetch('https://api.aviationstack.com/v1/flights?access_key='
 
         // arrival_cityの天気を取得するAPI
         let weather ={
-            "appKey" : "c7d657441fc71317b94e231c802db1b8",
+            "appKey" : "",　//OpenweatherのAPI KEY
             fetchWeather: function (city) {  
                 fetch("https://api.openweathermap.org/data/2.5/weather?q=" 
                 + city
