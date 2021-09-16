@@ -6,7 +6,7 @@ dev21_kadai03_naoyaohzawa_08 API
 
 ②工夫した点・こだわった点 ・
 航空機の出発、到着がrealtimeで表示されるAPIを利用。Realtimeのフライトを１つpick upしその日の行き先を決めてくれるアプリ。
-行き先のairport名を取得したら、OpenWeather APIを利用して、その場所のRealtimeな天気を表示するようにした。
+行き先のairport名を取得したら、OpenWeather APIを利用して、その場所のRealtimeな天気を表示するようにした。フライト数が多すぎるので、シンガポール発のSingapore Airline便だけに限定した。
 またSingapore空港の出発便をリストで表示できるようにして、空港の搭乗ボードを再現してみた。
 行き先の場所の画像をunsplashから自動で検索してhtmlに表示することで、行き先の風景を表示。（ただし、unsplashに保存されている画像の中から、検索ワードでランダムに画像が表示されるので、たまに関係ない画像が表示されてしまうが。。）
 
